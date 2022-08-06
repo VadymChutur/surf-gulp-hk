@@ -1,4 +1,10 @@
+container {
+  width: 1440px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 body {
-  background-image: url(@img/1_SLcXDKiO_LF_-0YJql891w.jpg);
-  background-size: contain;
+  color: var(--main-text);
+  background-color: var(--backround-color);
 }
