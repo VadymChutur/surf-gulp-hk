@@ -13,3 +13,7 @@ for add images write @img/name-image._
 for add background image @img/name-image._
 
 for add block html write in index html @@include('./html/\*.html',{})
+
+
+maket figma 
+https://www.figma.com/file/UZ0OTsb20YQfxK7KhYYLcD/gosurf-blackflagcreative?node-id=0%3A1
