@@ -4,6 +4,12 @@
   padding-left: 133px;
   //   background-image: url(img/shop_1.png);
   //   z-index: 1;
+
+  background-image: url(/img/shop-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
 }
 
 .container__bg {
@@ -20,7 +26,7 @@
   margin-left: 245px;
   margin-bottom: 193px;
   padding: 0;
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 800;
   font-size: 80px;
@@ -43,7 +49,7 @@
 
 .surf__style {
   margin-bottom: 8px;
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -58,7 +64,7 @@
 .surf__name {
   margin-bottom: 78px;
   width: 481px;
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 800;
   font-size: 40px;
@@ -70,7 +76,7 @@
 .surf__price {
   position: relative;
   margin-bottom: 67px;
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 800;
   font-size: 32px;
@@ -82,6 +88,7 @@
     position: absolute;
     left: 0;
     bottom: 52px;
+
     content: "";
     background-image: url(/img/Star.png);
     background-repeat: no-repeat;
@@ -110,7 +117,7 @@
 }
 
 .surf__extras-name {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -125,7 +132,7 @@
 }
 
 .surf__extras-price {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -166,7 +173,7 @@
 }
 
 .surf__extras {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 800;
   font-size: 28px;
@@ -190,7 +197,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    content: "";
+    content: '';
     width: 20px;
     height: 20px;
     background-image: url(/img/Oval.svg);
