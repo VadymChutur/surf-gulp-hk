@@ -1,13 +1,30 @@
 .shop {
+  padding-top: 130px;
+  padding-bottom: 142px;
+  padding-left: 133px;
+  //   background-image: url(img/shop_1.png);
+  //   z-index: 1;
+
   background-image: url(/img/shop-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
 }
 
+.container__bg {
+  position: relative;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-image: url(/img/shop_bg.png);
+  background-repeat: no-repeat;
+  background-position: 380px 411px;
+  mix-blend-mode: normal;
+  opacity: 0.85;
+}
 .shop__title {
+  position: relative;
   margin-left: 245px;
-  margin-bottom: 244px;
+  margin-bottom: 193px;
   padding: 0;
   font-family: 'Fira Sans';
   font-style: normal;
@@ -16,6 +33,18 @@
   line-height: 156px;
   text-transform: uppercase;
   color: #ffffff;
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url(/img/shop_1.png);
+    left: -280px;
+    bottom: -75px;
+    width: 508px;
+    height: 156px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
 }
 
 .surf__style {
@@ -59,14 +88,14 @@
     position: absolute;
     left: 0;
     bottom: 52px;
-    content: '';
-    background-image: url(img/Star.png);
+
+    content: "";
+    background-image: url(/img/Star.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 154px;
     height: 22px;
-    background-color: #ffffff;
   }
 }
 
@@ -75,6 +104,11 @@
   justify-content: space-between;
 }
 
+.surf__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .surf__extras-list {
   display: flex;
   list-style: none;
@@ -135,6 +169,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  z-index: 1;
 }
 
 .surf__extras {
@@ -157,6 +192,7 @@
 
 .surf__photo {
   position: relative;
+  z-index: 1;
   &::after {
     position: absolute;
     top: 0;
@@ -164,7 +200,6 @@
     content: '';
     width: 20px;
     height: 20px;
-    background-image: url(img/Oval.svg);
-    background-color: red;
+    background-image: url(/img/Oval.svg);
   }
 }
