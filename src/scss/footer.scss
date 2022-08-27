@@ -1,4 +1,65 @@
-.icom-svg {
-  color: aqua;
-  fill: currentColor;
+.footer__logo {
+  margin-top: 284px;
+  margin-bottom: 27px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 172px;
+  height: 64px;
+
+  .footer__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.footer__actions {
+  position: relative;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: var(--main-text);
+
+  &--after {
+    margin-right: 18px;
+  }
+
+  &--after::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: -9px;
+    right: -18px;
+    width: 111px;
+    height: 64px;
+    background-color: var(--accent-color);
+  }
+
+  &--before::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 22px;
+    left: 51px;
+    width: 20px;
+    height: 1px;
+    background-color: var(--main-text);
+  }
+}
+
+.footer__copyrigth {
+  margin-bottom: 34px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.17;
+
+  text-align: center;
+  letter-spacing: 1.05px;
+  text-transform: uppercase;
+  color: var(--main-text);
+
+  mix-blend-mode: normal;
+  opacity: 0.5;
 }
