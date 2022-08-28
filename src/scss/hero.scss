@@ -1,0 +1,277 @@
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+}
+
+.header__container {
+  position: relative;
+}
+
+.header-container-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 168px;
+  min-height: 1024px;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.251);
+
+  z-index: 10;
+}
+
+.header__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  font-weight: 800;
+  font-size: 200px;
+  line-height: 0.78;
+
+  opacity: 0.07;
+  z-index: -1;
+}
+
+.navigation {
+  margin-top: 118px;
+}
+
+.navigation__list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 37px;
+}
+
+.navigation__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navigation__text {
+  margin-top: 6px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 3px;
+
+  color: var(--main-text);
+  text-transform: capitalize;
+}
+
+.header__search {
+  display: block;
+  margin-top: 37px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.header__calendar-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 37px;
+}
+
+.header__date {
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 0.89;
+}
+
+.header__locition-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.header__position-svg {
+  margin-right: 8px;
+}
+
+.header__mounth-age {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.header__location {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 1.05px;
+}
+
+// -------------------SECTION "HERO"----------------------//
+.hero {
+}
+
+.hero__container {
+  position: relative;
+
+  min-height: 1024px;
+
+  background-image: radial-gradient(
+      62.09% 62.09% at 42.87% 49.23%,
+      rgba(34, 34, 34, 0.426517) 0%,
+      #0f0f0f 100%
+    ),
+    url("../img/hero-slide-3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero__container {
+      background-image: radial-gradient(
+          62.09% 62.09% at 42.87% 49.23%,
+          rgba(34, 34, 34, 0.426517) 0%,
+          #0f0f0f 100%
+        ),
+        url("../img/hero-slide-3@x2.jpg");
+    }
+  }
+}
+
+.hero__box-arrovs {
+  position: absolute;
+  top: 40px;
+  right: 75px;
+
+  z-index: 10;
+}
+
+.hero__button-arrow {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.hero__map {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header__list-shores {
+  position: absolute;
+  right: 80px;
+  bottom: 41px;
+
+  display: flex;
+  gap: 40px;
+}
+
+.header__item-shores {
+  display: flex;
+  align-items: center;
+
+  padding-top: 6px;
+
+  border-top: 4px solid var(--main-elements);
+}
+
+.header__number-shores {
+  margin-right: 85px;
+
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.42;
+}
+
+.header__name-shores {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.19;
+
+  text-transform: capitalize;
+}
+
+.hero__arrows-down {
+  position: absolute;
+  left: 209px;
+  bottom: 41px;
+}
+
+.hero__box-place {
+  position: absolute;
+  right: 73px;
+  bottom: 115px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.hero__list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 50px;
+
+  margin-bottom: 20px;
+}
+
+.hero__item {
+  text-align: end;
+}
+
+.hero__down-text {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.45;
+
+  letter-spacing: 7.33333px;
+
+  color: rgba(255, 255, 255, 0.5);
+
+  &--place {
+    margin-bottom: 25px;
+  }
+
+  &::before {
+    content: "";
+
+    display: block;
+    margin-right: 24px;
+
+    width: 80px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.hero__down-title {
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 1.08;
+}
+
+.hero__down-title--condition {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 2.15;
+}
