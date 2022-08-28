@@ -1,83 +1,117 @@
 <header class="header">
-  <div class="container">
-    <a href="" class="logo">Go - surf</a>
+  <div class="container header__container">
+    <div class="header-container-box">
+      <a href="" class="logo">
+        <img src="../img/logo_png.png" alt="Logo" />
+      </a>
 
-    <p class="header__text">Go <span class="header__text-second">surf</span></p>
+      <p class="header__text">
+        Go <span class="header__text-second">surf</span>
+      </p>
 
-    <nav class="navigation">
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <svg class="navigation__svg" width="61" height="48">
-            <use href="img/icons/icons.svg#header-surf"></use>
-          </svg>
-          <p class="navigation__text">Surf</p>
-        </li>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="" class="navigation__link">
+              <svg class="navigation__svg" width="61" height="48">
+                <use href="img/icons/icons.svg#header-surf"></use>
+              </svg>
+              <p class="navigation__text">Surf</p>
+            </a>
+          </li>
 
-        <li class="navigation__item">
-          <svg class="navigation__svg" width="53" height="33">
-            <use href="img/icons/icons.svg#header-bus"></use>
-          </svg>
-          <p class="navigation__text">Travel</p>
-        </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link">
+              <svg class="navigation__svg" width="53" height="33">
+                <use href="img/icons/icons.svg#header-bus"></use>
+              </svg>
+              <p class="navigation__text">Travel</p>
+            </a>
+          </li>
 
-        <li class="navigation__item">
-          <svg class="navigation__svg" width="47" height="48">
-            <use href="img/icons/icons.svg#header-camp"></use>
-          </svg>
-          <p class="navigation__text">Sleep</p>
-        </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link">
+              <svg class="navigation__svg" width="47" height="48">
+                <use href="img/icons/icons.svg#header-camp"></use>
+              </svg>
+              <p class="navigation__text">Sleep</p>
+            </a>
+          </li>
 
-        <li class="navigation__item">
-          <svg class="navigation__svg" width="25" height="52">
-            <use href="img/icons/icons.svg#header-surfboard"></use>
-          </svg>
-          <p class="navigation__text">Shop</p>
-        </li>
-      </ul>
-    </nav>
+          <li class="navigation__item">
+            <a href="" class="navigation__link">
+              <svg class="navigation__svg" width="25" height="52">
+                <use href="img/icons/icons.svg#header-surfboard"></use>
+              </svg>
+              <p class="navigation__text">Shop</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
 
-    <svg class="header__search" width="24" height="24">
-      <use href="img/icons/icons.svg#header-search"></use>
-    </svg>
+      <button type="button" class="header__search">
+        <svg class="header__search-icon" width="24" height="24">
+          <use href="img/icons/icons.svg#header-search"></use>
+        </svg>
+      </button>
 
-    <span class="header__date">20</span>
-    <span class="header__mounth-age">06 | 2018</span>
+      <div class="header__calendar-box">
+        <span class="header__date">20</span>
+        <span class="header__mounth-age">06 | 2018</span>
+      </div>
 
-    <p class="header__location">California</p>
+      <div class="header__locition-box">
+        <svg class="header__position-svg" width="11" height="14">
+          <use href="img/icons/icons.svg#header-marker"></use>
+        </svg>
+        <p class="header__location">California</p>
+      </div>
+    </div>
   </div>
 </header>
 
 <section class="hero">
-  <div class="container">
+  <div class="container hero__container">
     <h1 class="hero__title visually-hidden">Go surf</h1>
 
-    <svg class="hero__arrow hero__arrow--left" width="25" height="21">
-      <use href="img/icons/icons.svg#arrow-left"></use>
-    </svg>
+    <div class="hero__box-arrovs">
+      <button type="button" class="hero__button-arrow hero__button-arrow--left">
+        <svg class="hero__arrow hero__arrow--left" width="25" height="21">
+          <use href="img/icons/icons.svg#arrow-left"></use>
+        </svg>
+      </button>
 
-    <svg class="hero__arrow hero__arrow--right" width="25" height="21">
-      <use href="img/icons/icons.svg#arrow-right"></use>
-    </svg>
+      <button
+        type="button"
+        class="hero__button-arrow hero__button-arrow--right"
+      >
+        <svg class="hero__arrow hero__arrow--right" width="25" height="21">
+          <use href="img/icons/icons.svg#arrow-right"></use>
+        </svg>
+      </button>
+    </div>
 
     <svg class="hero__map" width="1001" height="496">
       <use href="img/icons/icons.svg#hero-map"></use>
     </svg>
 
-    <ul class="hero__list">
-      <li class="hero__item">
-        <p class="hero__down-text">Surf</p>
-        <h2 class="hero__down-title">West Shore</h2>
-      </li>
+    <div class="hero__box-place">
+      <ul class="hero__list">
+        <li class="hero__item hero__item--place">
+          <p class="hero__down-text hero__down-text--place">Surf</p>
+          <h2 class="hero__down-title">West Shore</h2>
+        </li>
 
-      <li class="hero__item">
-        <p class="hero__down-text">Condition</p>
-        <h2 class="hero__down-title">Radical</h2>
-      </li>
-    </ul>
+        <li class="hero__item hero__item--condition">
+          <p class="hero__down-text hero__down-text--condition">Condition</p>
+          <h2 class="hero__down-title hero__down-title--condition">Radical</h2>
+        </li>
+      </ul>
 
-    <svg class="hero__arrow hero__arrow--right-down" width="25" height="21">
-      <use href="img/icons/icons.svg#arrow-right"></use>
-    </svg>
+      <svg class="hero__arrow hero__arrow--right-down" width="25" height="21">
+        <use href="img/icons/icons.svg#arrow-right"></use>
+      </svg>
+    </div>
 
     <svg class="hero__arrows-down" width="21" height="24">
       <use href="img/icons/icons.svg#arrows-down"></use>
