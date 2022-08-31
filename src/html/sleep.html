@@ -1,118 +1,131 @@
 <section class="sleep">
-	<div class="container">
+	<div class="container container--non-padding">
 		<h2 class="sleep__title">sleep</h2>
 
-		<div class="global-img">
-			<img class="bg-img" src="@img/sleep-background.png" alt="sleep area" />
-
-			<div class="bg-hammock">
-				<img class="img-hammock" src="@img/sleep-hammock.png" alt="hammock" />
-			</div>
-
-			<div class="bg-flover--little">
+		<div class="sleep__box">
+			<div class="global-img">
 				<img
-					class="img-flover--little"
-					src="@img/sleep-flover-little.png"
-					alt="little flover"
+					class="bg-img"
+					src="@img/sleep-background@x2.png"
+					width="1096"
+					height="771"
+					alt="sleep area"
 				/>
+
+				<div class="bg-hammock">
+					<img class="img-hammock" src="@img/sleep-hammock.png" alt="hammock" />
+				</div>
+
+				<div class="bg-flover--little">
+					<img
+						class="img-flover--little"
+						src="@img/sleep-flover-little.png"
+						alt="little flover"
+					/>
+				</div>
+			</div>
+
+			<div class="about sleep__about">
+				<p class="text about__pretitle">Resorts</p>
+				<h3 class="about__title">
+					Auberge <span class="title-mark">|</span> Australia
+				</h3>
+
+				<ul class="slider-switch list">
+					<li class="switch switch--left">
+						<button
+							class="btn switch__btn--left"
+							type="button"
+							aria-label="previous slide"
+						>
+							<svg width="24" height="20">
+								<use href="img/icons/icons.svg#arrow-left"></use>
+							</svg>
+						</button>
+					</li>
+					<li class="switch switch--right">
+						<button
+							class="btn switch__btn--right"
+							type="button"
+							aria-label="next slide"
+						>
+							<svg width="24" height="20">
+								<use href="img/icons/icons.svg#arrow-right"></use>
+							</svg>
+						</button>
+					</li>
+				</ul>
 			</div>
 		</div>
 
-		<div class="about sleep__about">
-			<p class="about__text">Resorts</p>
-			<h3 class="about__title">Auberge | Australia</h3>
+		<div class="rating">
+			<p class="text rating__text">Rating</p>
 
-			<ul class="slider-switch">
-				<li class="left-switch">
-					<button
-						class="left-switch__btn"
-						type="button"
-						aria-label="previous slide"
-					>
-						<svg width="24" height="20">
-							<use href="img/icons/icons.svg#arrow-left"></use>
-						</svg>
-					</button>
-				</li>
-				<li class="right-switch">
-					<button
-						class="right-switch__btn"
-						type="button"
-						aria-label="next slide"
-					>
-						<svg width="24" height="20">
-							<use href="img/icons/icons.svg#arrow-right"></use>
-						</svg>
-					</button>
-				</li>
-			</ul>
-		</div>
+			<div class="rating__box">
+				<h3 class="rating__title">Excellent</h3>
 
-		<div class="rating sleep__rating">
-			<p class="rating__text">Rating</p>
-			<h3 class="rating__title">Excellent</h3>
-
-			<ul class="star-rating">
-				<li class="star-rating__item">
-					<button
-						class="star-rating__btn"
-						type="button"
-						aria-label="1 star rating"
-					>
-						<svg width="54" height="54">
-							<use href="img/icons/icons.svg#star"></use>
-						</svg>
-					</button>
-				</li>
-				<li class="star-rating__item">
-					<button
-						class="star-rating__btn"
-						type="button"
-						aria-label="2 star rating"
-					>
-						<svg width="54" height="54">
-							<use href="img/icons/icons.svg#star"></use>
-						</svg>
-					</button>
-				</li>
-				<li class="star-rating__item">
-					<button
-						class="star-rating__btn"
-						type="button"
-						aria-label="3 star rating"
-					>
-						<svg width="54" height="54">
-							<use href="img/icons/icons.svg#star"></use>
-						</svg>
-					</button>
-				</li>
-				<li class="star-rating__item">
-					<button
-						class="star-rating__btn"
-						type="button"
-						aria-label="4 star rating"
-					>
-						<svg width="54" height="54">
-							<use href="img/icons/icons.svg#star"></use>
-						</svg>
-					</button>
-				</li>
-				<li class="star-rating__item">
-					<button
-						class="star-rating__btn"
-						type="button"
-						aria-label="5 star rating"
-					>
-						<svg width="54" height="54">
-							<use href="img/icons/icons.svg#star"></use>
-						</svg>
-					</button>
-				</li>
-			</ul>
+				<ul class="star-rating list">
+					<li class="star-rating__item">
+						<button
+							class="btn star-rating__btn"
+							type="button"
+							aria-label="1 star rating"
+						>
+							<svg width="54" height="54">
+								<use href="img/icons/icons.svg#star"></use>
+							</svg>
+						</button>
+					</li>
+					<li class="star-rating__item">
+						<button
+							class="btn star-rating__btn"
+							type="button"
+							aria-label="2 star rating"
+						>
+							<svg width="54" height="54">
+								<use href="img/icons/icons.svg#star"></use>
+							</svg>
+						</button>
+					</li>
+					<li class="star-rating__item">
+						<button
+							class="btn star-rating__btn"
+							type="button"
+							aria-label="3 star rating"
+						>
+							<svg class="qwe" width="54" height="54">
+								<use href="img/icons/icons.svg#star"></use>
+							</svg>
+						</button>
+					</li>
+					<li class="star-rating__item">
+						<button
+							class="btn star-rating__btn"
+							type="button"
+							aria-label="4 star rating"
+						>
+							<svg width="54" height="54">
+								<use href="img/icons/icons.svg#star"></use>
+							</svg>
+						</button>
+					</li>
+					<li class="star-rating__item">
+						<button
+							class="btn star-rating__btn"
+							type="button"
+							aria-label="5 star rating"
+						>
+							<svg width="54" height="54">
+								<use href="img/icons/icons.svg#star"></use>
+							</svg>
+						</button>
+					</li>
+				</ul>
+			</div>
 		</div>
 
 		<div class="position-cost">
-			<ul class="cost">
+			<ul class="cost list">
 				<li class="cost__item">
 					<p class="cost__option">Resort</p>
 					<h4 class="cost__details">Auberge Australia</h4>
@@ -121,10 +134,10 @@
 					<p class="cost__option"># of Nights</p>
 					<h4 class="cost__details">5 Nights</h4>
 
-					<ul class="service-quantity">
+					<ul class="service-quantity list">
 						<li class="decrease-amount">
 							<button
-								class="decrease-amount__btn"
+								class="btn decrease-amount__btn"
 								type="button"
 								aria-label="reduce the amount of"
 							>
@@ -135,7 +148,7 @@
 						</li>
 						<li class="increase-amount">
 							<button
-								class="increase-amount__btn"
+								class="btn increase-amount__btn"
 								type="button"
 								aria-label="increase the number"
 							>
@@ -150,10 +163,10 @@
 					<p class="cost__option"># of Guests</p>
 					<h4 class="cost__details">4 Guests</h4>
 
-					<ul class="service-quantity">
+					<ul class="service-quantity list">
 						<li class="decrease-amount">
 							<button
-								class="decrease-amount__btn"
+								class="btn decrease-amount__btn"
 								type="button"
 								aria-label="reduce the amount of"
 							>
@@ -164,7 +177,7 @@
 						</li>
 						<li class="increase-amount">
 							<button
-								class="increase-amount__btn"
+								class="btn increase-amount__btn"
 								type="button"
 								aria-label="increase the number"
 							>
@@ -178,24 +191,28 @@
 				<li class="cost__item">
 					<p class="cost__option">Pricing</p>
 					<h4 class="cost__details">$349 USD</h4>
-					<p class="cost__details">Per Night</p>
+					<p class="cost__others">Per Night</p>
 				</li>
 			</ul>
-
-			<div class="sleep__bg-flover--big">
-				<img
-					class="img-flover--big"
-					src="@img/sleep-flover-big.png"
-					alt="big flover"
-				/>
-			</div>
 		</div>
 
-		<button class="sleep__btn" type="button" aria-label="order service">
-			book - stay
-			<svg width="24" height="20">
-				<use href="img/icons/icons.svg#arrow-right"></use>
-			</svg>
-		</button>
+		<div class="sleep__bg-flover--big">
+			<img
+				class="img-flover--big"
+				src="@img/sleep-flover-big.png"
+				alt="big flover"
+			/>
+		</div>
+
+		<div class="sleep__btn-box">
+			<p class="text-before-btn">book <span class="btn-mark">-</span></p>
+
+			<button class="sleep__btn" type="button" aria-label="order service">
+				stay
+				<svg width="24" height="20">
+					<use href="img/icons/icons.svg#arrow-right"></use>
+				</svg>
+			</button>
+		</div>
 	</div>
 </section>

@@ -1,12 +1,96 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<meta charset="utf-8"/>
-		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 		<title>SVG stack preview | svg-sprite</title>
-		<style>@charset "UTF-8";body{padding:0;margin:0;color:#666;background:#fafafa;font-family:Arial,Helvetica,sans-serif;font-size:1em;line-height:1.4}header{display:block;padding:3em 3em 2em 3em;background-color:#fff}header p{margin:2em 0 0 0}section{border-top:1px solid #eee;padding:2em 3em 0 3em}section ul{margin:0;padding:0}section li{display:inline;display:inline-block;background-color:#fff;position:relative;margin:0 2em 2em 0;vertical-align:top;border:1px solid #ccc;padding:1em 1em 3em 1em;cursor:default}.icon-box{margin:0;width:144px;height:144px;position:relative;background:#ccc url("data:image/gif;base64,R0lGODlhDAAMAIAAAMzMzP///yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozQjk4OTI0MUY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozQjk4OTI0MkY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjNCOTg5MjNGRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjNCOTg5MjQwRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAAAAAAAsAAAAAAwADAAAAhaEH6mHmmzcgzJAUG/NVGrfOZ8YLlABADs=") top left repeat;border:1px solid #ccc;display:table-cell;vertical-align:middle;text-align:center}.icon{display:inline;display:inline-block}h1{margin-top:0}h2{margin:0;padding:0;font-size:1em;font-weight:normal;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;position:absolute;left:1em;right:1em;bottom:1em}footer{display:block;margin:0;padding:0 3em 3em 3em}footer p{margin:0;font-size:.7em}footer a{color:#0f7595;margin-left:0}</style>
+		<style>
+			@charset "UTF-8";
+			body {
+				padding: 0;
+				margin: 0;
+				color: #666;
+				background: #fafafa;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 1em;
+				line-height: 1.4;
+			}
+			header {
+				display: block;
+				padding: 3em 3em 2em 3em;
+				background-color: #fff;
+			}
+			header p {
+				margin: 2em 0 0 0;
+			}
+			section {
+				border-top: 1px solid #eee;
+				padding: 2em 3em 0 3em;
+			}
+			section ul {
+				margin: 0;
+				padding: 0;
+			}
+			section li {
+				display: inline;
+				display: inline-block;
+				background-color: #fff;
+				position: relative;
+				margin: 0 2em 2em 0;
+				vertical-align: top;
+				border: 1px solid #ccc;
+				padding: 1em 1em 3em 1em;
+				cursor: default;
+			}
+			.icon-box {
+				margin: 0;
+				width: 144px;
+				height: 144px;
+				position: relative;
+				background: #ccc
+					url('data:image/gif;base64,R0lGODlhDAAMAIAAAMzMzP///yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozQjk4OTI0MUY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozQjk4OTI0MkY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjNCOTg5MjNGRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjNCOTg5MjQwRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAAAAAAAsAAAAAAwADAAAAhaEH6mHmmzcgzJAUG/NVGrfOZ8YLlABADs=')
+					top left repeat;
+				border: 1px solid #ccc;
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center;
+			}
+			.icon {
+				display: inline;
+				display: inline-block;
+			}
+			h1 {
+				margin-top: 0;
+			}
+			h2 {
+				margin: 0;
+				padding: 0;
+				font-size: 1em;
+				font-weight: normal;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				position: absolute;
+				left: 1em;
+				right: 1em;
+				bottom: 1em;
+			}
+			footer {
+				display: block;
+				margin: 0;
+				padding: 0 3em 3em 3em;
+			}
+			footer p {
+				margin: 0;
+				font-size: 0.7em;
+			}
+			footer a {
+				color: #0f7595;
+				margin-left: 0;
+			}
+		</style>
 
-<!--
+		<!--
 
 Sprite shape dimensions
 ====================================================================================================
@@ -16,50 +100,141 @@ They might well be outsourced to an external stylesheet of course.
 
 -->
 
-<style type="text/css">
-	.svg-POI-dims { width: 149px; height: 350px; }
-	.svg-arrow-left-dims { width: 25px; height: 21px; }
-	.svg-arrow-right-dims { width: 25px; height: 21px; }
-	.svg-arrows-down-dims { width: 21px; height: 24px; }
-	.svg-header-bus-dims { width: 52px; height: 33px; }
-	.svg-header-camp-dims { width: 39px; height: 40px; }
-	.svg-header-camp_!correct-dims { width: 47px; height: 48px; }
-	.svg-header-marker-dims { width: 11px; height: 14px; }
-	.svg-header-search-dims { width: 24px; height: 24px; }
-	.svg-header-surf-dims { width: 61px; height: 48px; }
-	.svg-header-surfboard-dims { width: 17px; height: 44px; }
-	.svg-header-surfboard_!correct-dims { width: 25px; height: 52px; }
-	.svg-hero-map-dims { width: 1001px; height: 496px; }
-	.svg-minus-dims { width: 14px; height: 4px; }
-	.svg-plus-dims { width: 14px; height: 14px; }
-	.svg-star-dims { width: 54px; height: 54px; }
-	.svg-surf-big-marker-dims { width: 149px; height: 350px; }
-	.svg-surf-drop-dims { width: 25px; height: 34px; }
-	.svg-surf-drop-transparent-dims { width: 19px; height: 25px; }
-	.svg-surf-light-circle-dims { width: 94px; height: 94px; }
-	.svg-surf-little-marker-dims { width: 14px; height: 17px; }
-	.svg-surf-map-dots-dims { width: 1200px; height: 635px; }
-	.svg-surf-wave-dims { width: 40px; height: 25px; }
-	.svg-surf-wind-dims { width: 26px; height: 24px; }
-</style>
+		<style type="text/css">
+			.svg-POI-dims {
+				width: 149px;
+				height: 350px;
+			}
+			.svg-arrow-left-dims {
+				width: 25px;
+				height: 21px;
+			}
+			.svg-arrow-right-dims {
+				width: 25px;
+				height: 21px;
+			}
+			.svg-arrows-down-dims {
+				width: 21px;
+				height: 24px;
+			}
+			.svg-header-bus-dims {
+				width: 52px;
+				height: 33px;
+			}
+			.svg-header-camp-dims {
+				width: 39px;
+				height: 40px;
+			}
+			.svg-header-camp-dims {
+				width: 47px;
+				height: 48px;
+			}
+			.svg-header-marker-dims {
+				width: 11px;
+				height: 14px;
+			}
+			.svg-header-search-dims {
+				width: 24px;
+				height: 24px;
+			}
+			.svg-header-surf-dims {
+				width: 61px;
+				height: 48px;
+			}
+			.svg-header-surfboard-dims {
+				width: 17px;
+				height: 44px;
+			}
+			.svg-header-surfboard-dims {
+				width: 25px;
+				height: 52px;
+			}
+			.svg-hero-map-dims {
+				width: 1001px;
+				height: 496px;
+			}
+			.svg-minus-dims {
+				width: 14px;
+				height: 4px;
+			}
+			.svg-plus-dims {
+				width: 14px;
+				height: 14px;
+			}
+			.svg-star-dims {
+				width: 54px;
+				height: 54px;
+			}
+			.svg-surf-big-marker-dims {
+				width: 149px;
+				height: 350px;
+			}
+			.svg-surf-drop-dims {
+				width: 25px;
+				height: 34px;
+			}
+			.svg-surf-drop-transparent-dims {
+				width: 19px;
+				height: 25px;
+			}
+			.svg-surf-light-circle-dims {
+				width: 94px;
+				height: 94px;
+			}
+			.svg-surf-little-marker-dims {
+				width: 14px;
+				height: 17px;
+			}
+			.svg-surf-map-dots-dims {
+				width: 1200px;
+				height: 635px;
+			}
+			.svg-surf-wave-dims {
+				width: 40px;
+				height: 25px;
+			}
+			.svg-surf-wind-dims {
+				width: 26px;
+				height: 24px;
+			}
+		</style>
 
-<!--
+		<!--
 ====================================================================================================
 -->
-
 	</head>
 	<body>
 		<header>
 			<h1>SVG stack preview</h1>
-			<p>This preview features an SVG stack. Please have a look at the HTML source for further details and be aware of the following constraints:</p>
+			<p>
+				This preview features an SVG stack. Please have a look at the HTML
+				source for further details and be aware of the following constraints:
+			</p>
 			<ul>
-				<li>Your browser has to <a href="http://caniuse.com/#feat=svg-fragment" target="_blank" rel="noopener noreferrer">support SVG fragment identifiers</a> for SVG stacks to work.</li>
-				<li>Support for SVG fragment identifiers hasn't always been that decent. For older browsers you will have to use some prolyfill like <a href="https://github.com/preciousforever/SVG-Stacker/blob/master/fixsvgstack.jquery.js" target="_blank" rel="noopener noreferrer">fixsvgstack.jquery.js</a>.</li>
+				<li>
+					Your browser has to
+					<a
+						href="http://caniuse.com/#feat=svg-fragment"
+						target="_blank"
+						rel="noopener noreferrer"
+						>support SVG fragment identifiers</a
+					>
+					for SVG stacks to work.
+				</li>
+				<li>
+					Support for SVG fragment identifiers hasn't always been that decent.
+					For older browsers you will have to use some prolyfill like
+					<a
+						href="https://github.com/preciousforever/SVG-Stacker/blob/master/fixsvgstack.jquery.js"
+						target="_blank"
+						rel="noopener noreferrer"
+						>fixsvgstack.jquery.js</a
+					>.
+				</li>
 			</ul>
 		</header>
 		<section>
-
-<!--
+			<!--
 
 SVG stack
 ====================================================================================================
@@ -70,232 +245,282 @@ selector is used to show the very shape that is referenced by the fragment ident
 -->
 
 			<ul>
-
 				<li title="POI">
 					<div class="icon-box">
-
 						<!-- POI -->
-						<img src="../icons/icons.svg#POI" class="svg-POI-dims" alt="POI"/>
-
+						<img src="../icons/icons.svg#POI" class="svg-POI-dims" alt="POI" />
 					</div>
 					<h2>POI</h2>
 				</li>
 				<li title="arrow-left">
 					<div class="icon-box">
-
 						<!-- arrow-left -->
-						<img src="../icons/icons.svg#arrow-left" class="svg-arrow-left-dims" alt="arrow-left"/>
-
+						<img
+							src="../icons/icons.svg#arrow-left"
+							class="svg-arrow-left-dims"
+							alt="arrow-left"
+						/>
 					</div>
 					<h2>arrow-left</h2>
 				</li>
 				<li title="arrow-right">
 					<div class="icon-box">
-
 						<!-- arrow-right -->
-						<img src="../icons/icons.svg#arrow-right" class="svg-arrow-right-dims" alt="arrow-right"/>
-
+						<img
+							src="../icons/icons.svg#arrow-right"
+							class="svg-arrow-right-dims"
+							alt="arrow-right"
+						/>
 					</div>
 					<h2>arrow-right</h2>
 				</li>
 				<li title="arrows-down">
 					<div class="icon-box">
-
 						<!-- arrows-down -->
-						<img src="../icons/icons.svg#arrows-down" class="svg-arrows-down-dims" alt="arrows-down"/>
-
+						<img
+							src="../icons/icons.svg#arrows-down"
+							class="svg-arrows-down-dims"
+							alt="arrows-down"
+						/>
 					</div>
 					<h2>arrows-down</h2>
 				</li>
 				<li title="header-bus">
 					<div class="icon-box">
-
 						<!-- header-bus -->
-						<img src="../icons/icons.svg#header-bus" class="svg-header-bus-dims" alt="header-bus"/>
-
+						<img
+							src="../icons/icons.svg#header-bus"
+							class="svg-header-bus-dims"
+							alt="header-bus"
+						/>
 					</div>
 					<h2>header-bus</h2>
 				</li>
 				<li title="header-camp">
 					<div class="icon-box">
-
 						<!-- header-camp -->
-						<img src="../icons/icons.svg#header-camp" class="svg-header-camp-dims" alt="header-camp"/>
-
+						<img
+							src="../icons/icons.svg#header-camp"
+							class="svg-header-camp-dims"
+							alt="header-camp"
+						/>
 					</div>
 					<h2>header-camp</h2>
 				</li>
 				<li title="header-camp_!correct">
 					<div class="icon-box">
-
 						<!-- header-camp_!correct -->
-						<img src="../icons/icons.svg#header-camp_!correct" class="svg-header-camp_!correct-dims" alt="header-camp_!correct"/>
-
+						<img
+							src="../icons/icons.svg#header-camp_!correct"
+							class="svg-header-camp_!correct-dims"
+							alt="header-camp_!correct"
+						/>
 					</div>
 					<h2>header-camp_!correct</h2>
 				</li>
 				<li title="header-marker">
 					<div class="icon-box">
-
 						<!-- header-marker -->
-						<img src="../icons/icons.svg#header-marker" class="svg-header-marker-dims" alt="header-marker"/>
-
+						<img
+							src="../icons/icons.svg#header-marker"
+							class="svg-header-marker-dims"
+							alt="header-marker"
+						/>
 					</div>
 					<h2>header-marker</h2>
 				</li>
 				<li title="header-search">
 					<div class="icon-box">
-
 						<!-- header-search -->
-						<img src="../icons/icons.svg#header-search" class="svg-header-search-dims" alt="header-search"/>
-
+						<img
+							src="../icons/icons.svg#header-search"
+							class="svg-header-search-dims"
+							alt="header-search"
+						/>
 					</div>
 					<h2>header-search</h2>
 				</li>
 				<li title="header-surf">
 					<div class="icon-box">
-
 						<!-- header-surf -->
-						<img src="../icons/icons.svg#header-surf" class="svg-header-surf-dims" alt="header-surf"/>
-
+						<img
+							src="../icons/icons.svg#header-surf"
+							class="svg-header-surf-dims"
+							alt="header-surf"
+						/>
 					</div>
 					<h2>header-surf</h2>
 				</li>
 				<li title="header-surfboard">
 					<div class="icon-box">
-
 						<!-- header-surfboard -->
-						<img src="../icons/icons.svg#header-surfboard" class="svg-header-surfboard-dims" alt="header-surfboard"/>
-
+						<img
+							src="../icons/icons.svg#header-surfboard"
+							class="svg-header-surfboard-dims"
+							alt="header-surfboard"
+						/>
 					</div>
 					<h2>header-surfboard</h2>
 				</li>
 				<li title="header-surfboard_!correct">
 					<div class="icon-box">
-
 						<!-- header-surfboard_!correct -->
-						<img src="../icons/icons.svg#header-surfboard_!correct" class="svg-header-surfboard_!correct-dims" alt="header-surfboard_!correct"/>
-
+						<img
+							src="../icons/icons.svg#header-surfboard_!correct"
+							class="svg-header-surfboard_!correct-dims"
+							alt="header-surfboard_!correct"
+						/>
 					</div>
 					<h2>header-surfboard_!correct</h2>
 				</li>
 				<li title="hero-map">
 					<div class="icon-box">
-
 						<!-- hero-map -->
-						<img src="../icons/icons.svg#hero-map" class="svg-hero-map-dims" alt="hero-map"/>
-
+						<img
+							src="../icons/icons.svg#hero-map"
+							class="svg-hero-map-dims"
+							alt="hero-map"
+						/>
 					</div>
 					<h2>hero-map</h2>
 				</li>
 				<li title="minus">
 					<div class="icon-box">
-
 						<!-- minus -->
-						<img src="../icons/icons.svg#minus" class="svg-minus-dims" alt="minus"/>
-
+						<img
+							src="../icons/icons.svg#minus"
+							class="svg-minus-dims"
+							alt="minus"
+						/>
 					</div>
 					<h2>minus</h2>
 				</li>
 				<li title="plus">
 					<div class="icon-box">
-
 						<!-- plus -->
-						<img src="../icons/icons.svg#plus" class="svg-plus-dims" alt="plus"/>
-
+						<img
+							src="../icons/icons.svg#plus"
+							class="svg-plus-dims"
+							alt="plus"
+						/>
 					</div>
 					<h2>plus</h2>
 				</li>
 				<li title="star">
 					<div class="icon-box">
-
 						<!-- star -->
-						<img src="../icons/icons.svg#star" class="svg-star-dims" alt="star"/>
-
+						<img
+							src="../icons/icons.svg#star"
+							class="svg-star-dims"
+							alt="star"
+						/>
 					</div>
 					<h2>star</h2>
 				</li>
 				<li title="surf-big-marker">
 					<div class="icon-box">
-
 						<!-- surf-big-marker -->
-						<img src="../icons/icons.svg#surf-big-marker" class="svg-surf-big-marker-dims" alt="surf-big-marker"/>
-
+						<img
+							src="../icons/icons.svg#surf-big-marker"
+							class="svg-surf-big-marker-dims"
+							alt="surf-big-marker"
+						/>
 					</div>
 					<h2>surf-big-marker</h2>
 				</li>
 				<li title="surf-drop">
 					<div class="icon-box">
-
 						<!-- surf-drop -->
-						<img src="../icons/icons.svg#surf-drop" class="svg-surf-drop-dims" alt="surf-drop"/>
-
+						<img
+							src="../icons/icons.svg#surf-drop"
+							class="svg-surf-drop-dims"
+							alt="surf-drop"
+						/>
 					</div>
 					<h2>surf-drop</h2>
 				</li>
 				<li title="surf-drop-transparent">
 					<div class="icon-box">
-
 						<!-- surf-drop-transparent -->
-						<img src="../icons/icons.svg#surf-drop-transparent" class="svg-surf-drop-transparent-dims" alt="surf-drop-transparent"/>
-
+						<img
+							src="../icons/icons.svg#surf-drop-transparent"
+							class="svg-surf-drop-transparent-dims"
+							alt="surf-drop-transparent"
+						/>
 					</div>
 					<h2>surf-drop-transparent</h2>
 				</li>
 				<li title="surf-light-circle">
 					<div class="icon-box">
-
 						<!-- surf-light-circle -->
-						<img src="../icons/icons.svg#surf-light-circle" class="svg-surf-light-circle-dims" alt="surf-light-circle"/>
-
+						<img
+							src="../icons/icons.svg#surf-light-circle"
+							class="svg-surf-light-circle-dims"
+							alt="surf-light-circle"
+						/>
 					</div>
 					<h2>surf-light-circle</h2>
 				</li>
 				<li title="surf-little-marker">
 					<div class="icon-box">
-
 						<!-- surf-little-marker -->
-						<img src="../icons/icons.svg#surf-little-marker" class="svg-surf-little-marker-dims" alt="surf-little-marker"/>
-
+						<img
+							src="../icons/icons.svg#surf-little-marker"
+							class="svg-surf-little-marker-dims"
+							alt="surf-little-marker"
+						/>
 					</div>
 					<h2>surf-little-marker</h2>
 				</li>
 				<li title="surf-map-dots">
 					<div class="icon-box">
-
 						<!-- surf-map-dots -->
-						<img src="../icons/icons.svg#surf-map-dots" class="svg-surf-map-dots-dims" alt="surf-map-dots"/>
-
+						<img
+							src="../icons/icons.svg#surf-map-dots"
+							class="svg-surf-map-dots-dims"
+							alt="surf-map-dots"
+						/>
 					</div>
 					<h2>surf-map-dots</h2>
 				</li>
 				<li title="surf-wave">
 					<div class="icon-box">
-
 						<!-- surf-wave -->
-						<img src="../icons/icons.svg#surf-wave" class="svg-surf-wave-dims" alt="surf-wave"/>
-
+						<img
+							src="../icons/icons.svg#surf-wave"
+							class="svg-surf-wave-dims"
+							alt="surf-wave"
+						/>
 					</div>
 					<h2>surf-wave</h2>
 				</li>
 				<li title="surf-wind">
 					<div class="icon-box">
-
 						<!-- surf-wind -->
-						<img src="../icons/icons.svg#surf-wind" class="svg-surf-wind-dims" alt="surf-wind"/>
-
+						<img
+							src="../icons/icons.svg#surf-wind"
+							class="svg-surf-wind-dims"
+							alt="surf-wind"
+						/>
 					</div>
 					<h2>surf-wind</h2>
 				</li>
 			</ul>
 
-<!--
+			<!--
 ====================================================================================================
 -->
-
 		</section>
 		<footer>
-			<p>Generated at Sat, 27 Aug 2022 19:25:34 GMT by <a href="https://github.com/svg-sprite/svg-sprite" target="_blank" rel="noopener noreferrer">svg-sprite</a>.</p>
+			<p>
+				Generated at Sat, 27 Aug 2022 19:25:34 GMT by
+				<a
+					href="https://github.com/svg-sprite/svg-sprite"
+					target="_blank"
+					rel="noopener noreferrer"
+					>svg-sprite</a
+				>.
+			</p>
 		</footer>
 	</body>
 </html>
