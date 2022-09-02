@@ -1,0 +1,236 @@
+.travel {
+  padding-top: 140px;
+  padding-bottom: 60px;
+}
+.travel__container {
+  position: relative;
+  background-image: url(/img/travel-background.png);
+  background-repeat: no-repeat;
+  background-position: 15px 184px;
+  min-height: 1660px;
+  opacity: 0.9;
+}
+.travel__name {
+  position: relative;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 1.95;
+  padding: 0;
+  margin-left: 245px;
+  margin-bottom: 112px;
+  color: #ffffff;
+  top: 10px;
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url(/img/travel-before.png);
+    left: -245px;
+    bottom: -75px;
+    width: 620px;
+    height: 165px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 190px;
+    width: 80px;
+    height: 1px;
+    background-color: #4af6cd;
+  }
+}
+.location {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 73px;
+  align-items: flex-end;
+}
+.location__shore {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.45;
+  letter-spacing: 7.33333px;
+  color: #ffffff;
+  opacity: 0.5;
+  &::before {
+    content: "";
+    display: block;
+    margin-right: 24px;
+    width: 80px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+.location__country {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 2.15;
+  color: #ffffff;
+}
+.location__span {
+  font-weight: 100;
+}
+.location-button {
+  display: flex;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  opacity: 0.5;
+  padding: 0;
+  margin: 0;
+}
+.air {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top: 850px;
+  left: 130px;
+}
+.air__line {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.45;
+  letter-spacing: 7.33333px;
+  color: #ffffff;
+  opacity: 0.5;
+  &::after {
+    content: "";
+    display: block;
+    margin-left: 24px;
+    width: 80px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+.air__name {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 2.15;
+  color: #ffffff;
+}
+.calc {
+  position: relative;
+  top: 780px;
+  margin-right: 130px;
+  margin-left: 130px;
+}
+.calc__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calc__indicators {
+  display: flex;
+  justify-content: end;
+  width: 190px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 8px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  transform-origin: left;
+  transform: rotate(-90deg) translateX(-194px);
+}
+
+.calc__data {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 0.9;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-left: 18px;
+}
+.calc__subdata {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.57;
+  letter-spacing: 5.25px;
+  color: #ffffff;
+  opacity: 0.75;
+  text-align: right;
+}
+.button__list {
+  display: flex;
+  justify-content: end;
+}
+
+.button__left {
+  margin-right: 20px;
+}
+.coctail {
+  display: block;
+  right: 15px;
+  bottom: 0px;
+  position: absolute;
+}
+.virgin-fly {
+  display: block;
+  top: 650px;
+  position: absolute;
+  right: 15px;
+}
+.virgin-logo {
+  width: 52px;
+  height: 46px;
+  position: absolute;
+  left: 355px;
+  top: 37px;
+}
+
+.travel__button-box {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  top: 1000px;
+}
+
+.travel__button {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 0.9;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #4af6cd;
+  width: 200px;
+  height: 80px;
+  margin-left: 19px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: var(--main-text);
+    top: 50%;
+    left: -10px;
+  }
+}
+.travel__button__icon {
+  margin-left: 16px;
+}
+
+.travel__button-text {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 0.9;
+  text-align: right;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}

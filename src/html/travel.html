@@ -3,9 +3,12 @@
     <h2 class="travel__name">travel</h2>
     <div class="location">
       <h3 class="location__shore">Shore</h3>
-      <p class="location__country">Airlie Beach <span>|</span> Australia</p>
-      <ul class="button__list">
-        <li>
+      <p class="location__country">
+        Airlie Beach <span class="location__span">|</span> Australia
+      </p>
+
+      <ul class="button__list list">
+        <li class="button__left">
           <button class="location-button" type="button">
             <svg class="location-button__icon" width="24" height="20">
               <use href="img/icons/icons.svg#arrow-left"></use>
@@ -24,35 +27,51 @@
     <div class="air">
       <h3 class="air__line">Airline</h3>
       <p class="air__name">Virgin Australia</p>
+      <img class="virgin-logo" src="img/travel-virgin.png" alt="plane" />
+    </div>
+    <div class="virgin-fly">
       <img src="img/travel-plane.png" alt="plane" />
     </div>
+
     <div class="calc">
-      <ul class="calc__list">
+      <ul class="calc__list list">
         <li class="calc__item">
-          <h3 class="calc__indicators">Destination</h3>
-          <p class="calc__data">Queensland Australia</p>
+          <p class="calc__indicators">Destination</p>
+          <h3 class="calc__data">
+            Queensland <br />
+            Australia
+          </h3>
         </li>
         <li class="calc__item">
-          <h3 class="calc__indicators">Distance</h3>
-          <p class="calc__data">7,065 Miles</p>
+          <p class="calc__indicators">Distance</p>
+          <h3 class="calc__data">7,065 Miles</h3>
         </li>
         <li class="calc__item">
-          <h3 class="calc__indicators">Travel Time</h3>
-          <p class="calc__data">23 Hours 5 Minutes</p>
+          <p class="calc__indicators">Travel Time</p>
+          <h3 class="calc__data">
+            23 Hours <br />
+            5 Minutes
+          </h3>
         </li>
         <li class="calc__item">
-          <h3 class="calc__indicators">Pricing</h3>
-          <p class="calc__data">$1,976 USD</p>
-          <span class="calc__subdata">Round Trip</span>
+          <p class="calc__indicators">Pricing</p>
+          <h3 class="calc__data">$1,976 USD</h3>
+          <p class="calc__subdata accent">Round Trip</p>
         </li>
       </ul>
     </div>
-    <button class="travel-button" type="button">
-      book flight
-      <svg class="location-button__icon" width="24" height="20">
-        <use href="img/icons/icons.svg#arrow-right"></use>
-      </svg>
-    </button>
-    <img src="img/travel-coctail.png" alt="coctail" />
+    <div class="coctail">
+      <img src="img/travel-coctail.png" alt="coctail" />
+    </div>
+
+    <div class="travel__button-box">
+      <p class="travel__button-text">book</p>
+      <button class="travel__button" type="button">
+        flight
+        <svg class="travel__button__icon" width="24" height="20">
+          <use href="img/icons/icons.svg#arrow-right"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </section>
