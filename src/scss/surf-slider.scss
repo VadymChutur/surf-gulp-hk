@@ -1,0 +1,138 @@
+.surf-slider .container {
+  position: relative;
+  padding-top: 58px;
+}
+.button-list {
+  position: absolute;
+  top: 0;
+  right: 73px;
+  display: flex;
+  justify-content: end;
+}
+.button__item:not(:last-child) {
+  margin-right: 20px;
+}
+.btn {
+  display: flex;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  opacity: 0.5;
+  padding: 0;
+  margin: 0;
+}
+.surf-list {
+  position: relative;
+  display: flex;
+}
+.surf-list__item {
+  background: #1c2121;
+  mix-blend-mode: normal;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  &:nth-child(4n + 1) {
+    margin-top: 32px;
+  }
+  &:nth-child(4n + 3) {
+    margin-top: 89px;
+  }
+  &:hover {
+    .surf__picture {
+      opacity: 1;
+    }
+    .view-more {
+      display: block;
+    }
+    .surf__btn {
+      display: flex;
+    }
+  }
+}
+.surf-list__item:nth-child(2) {
+  position: absolute;
+  left: 24.31%;
+  &:hover {
+    background: none;
+  }
+}
+.surf-list__item:nth-child(3) {
+  position: absolute;
+  left: 48.61%;
+}
+.surf-list__item:nth-child(4) {
+  position: absolute;
+  right: 0;
+}
+.surf-box {
+  position: relative;
+}
+.surf__title {
+  position: absolute;
+  padding: 72px 0 0 38px;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 0.9;
+  text-transform: uppercase;
+  color: var(--main-text);
+}
+.surf__text {
+  position: absolute;
+  left: 38px;
+  bottom: 80px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--main-text);
+  transform: rotate(-90deg);
+  width: 0;
+  height: 0;
+}
+.surf__picture {
+  opacity: 0.25;
+}
+.view-box {
+  position: absolute;
+  top: -80px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.view-more {
+  display: none;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 0.9;
+  text-transform: uppercase;
+  color: var(--main-text);
+}
+.surf__btn {
+  display: none;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  background-color: var(--accent-color);
+  width: 168px;
+  height: 80px;
+  margin-left: 19px;
+}
+.surf__link {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 0.9;
+  text-transform: uppercase;
+  color: var(--main-text);
+}
+.surf__btn::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 1px;
+  background-color: var(--main-text);
+  top: 50%;
+  left: -10px;
+}
