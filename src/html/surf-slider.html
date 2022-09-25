@@ -1,40 +1,155 @@
-<ul>
-    <li>
-        <h3>Malibu Beach</h3>
-        <p>California USA</p>
-        <picture>
-            <source srcset="img/surf-slide--malibu-beach.jpg, img/surf-slide--malibu-beach@x2.jpg 2x" media="(min-width: 1200px)">
-            <img src="img/surf-slide--malibu-beach@x2.jpg" alt="Surfer on a board" width="390" heigth="750">
-        </picture>
-    </li>
-    <li>
-        <h3>Airlie Beach</h3>
-        <p>Queensland Australia</p>
-        <picture>
-            <source srcset="img/surf-slide--airlie-beach.jpg, img/surf-slide--airlie-beach@x2.jpg 2x" media="(min-width: 1200px)">
-            <img src="img/surf-slide--airlie-beach@x2.jpg" alt="Surfers in the ocean" width="390" heigth="750">
-        </picture>
-    </li>
-    <li>
-        <h3>Cloud Nine</h3>
-        <p>Siargao Philippines</p>
-        <picture>
-            <source srcset="img/surf-slide--cloud-nine.jpg, img/surf-slide--cloud-nine@x2.jpg 2x" media="(min-width: 1200px)">
-            <img src="img/surf-slide--cloud-nine@x2.jpg" alt="Girl on the board" width="390" heigth="750">
-        </picture>
-    </li>
-    <li>
-        <h3>Vieux Boucau</h3>
-        <p>Hossegor France</p>
-        <picture>
-            <source srcset="img/surf-slide--vieux-boucau.jpg, img/surf-slide--vieux-boucau@x2.jpg 2x" media="(min-width: 1200px)">
-            <img src="img/surf-slide--vieux-boucau@x2.jpg" alt="Surfer conquers the wave" width="390" heigth="750">
-        </picture>
-    </li>
-</ul>
-<p>View</p>
-<button type="button">Surf
-    <svg width="25" heigth="21">
-        <use href="img/icons.svg@arrow-right"></use>
-    </svg>
-</button>
+<section class="surf-slider">
+  <div class="container">
+    <ul class="button-list">
+      <li class="button__item">
+        <button class="btn" type="button">
+          <svg class="btn-icon" width="24" height="24">
+            <use href="img/icons/icons.svg#arrow-left"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="button__item">
+        <button class="btn" type="button">
+          <svg class="btn-icon" width="24" height="24">
+            <use href="img/icons/icons.svg#arrow-right"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+    <ul class="surf-list">
+      <li class="surf-list__item">
+        <div class="surf-box">
+          <h3 class="surf__title">Malibu<br />Beach</h3>
+          <p class="surf__text">California <span>|</span> USA</p>
+          <picture class="surf__picture">
+            <source
+              srcset="
+                img/surf-slide--malibu-beach.jpg,
+                img/surf-slide--malibu-beach@x2.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              src="img/surf-slide--malibu-beach@x2.jpg"
+              alt="Surfer on a board"
+              width="390"
+              heigth="750"
+              class="surf__img"
+            />
+          </picture>
+        </div>
+        <div class="view-box">
+          <p class="view-more">View</p>
+          <button type="button" class="surf__btn">
+            <a href="" class="surf__link">
+              Surf
+              <svg class="btn-icon" width="24" height="24">
+                <use href="img/icons/icons.svg#arrow-right"></use>
+              </svg>
+            </a>
+          </button>
+        </div>
+      </li>
+      <li class="surf-list__item">
+        <div class="surf-box">
+          <h3 class="surf__title">Airlie<br />Beach</h3>
+          <p class="surf__text">Queensland <span>|</span> Australia</p>
+          <picture class="surf__picture">
+            <source
+              srcset="
+                img/surf-slide--airlie-beach.jpg,
+                img/surf-slide--airlie-beach@x2.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              src="img/surf-slide--airlie-beach@x2.jpg"
+              alt="Surfers in the ocean"
+              width="400"
+              heigth="750"
+              class="surf__img"
+            />
+          </picture>
+        </div>
+        <div class="view-box">
+          <p class="view-more">View</p>
+          <button type="button" class="surf__btn">
+            <a href="" class="surf__link">
+              Surf
+              <svg class="btn-icon" width="24" height="24">
+                <use href="img/icons/icons.svg#arrow-right"></use>
+              </svg>
+            </a>
+          </button>
+        </div>
+      </li>
+      <li class="surf-list__item">
+        <div class="surf-box">
+          <h3 class="surf__title">Cloud<br />Nine</h3>
+          <p class="surf__text">Siargao <span>|</span> Philippines</p>
+          <picture class="surf__picture">
+            <source
+              srcset="
+                img/surf-slide--cloud-nine.jpg,
+                img/surf-slide--cloud-nine@x2.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              src="img/surf-slide--cloud-nine@x2.jpg"
+              alt="Girl on the board"
+              width="390"
+              heigth="750"
+              class="surf__img"
+            />
+          </picture>
+        </div>
+        <div class="view-box">
+          <p class="view-more">View</p>
+          <button type="button" class="surf__btn">
+            <a href="" class="surf__link">
+              Surf
+              <svg class="btn-icon" width="24" height="24">
+                <use href="img/icons/icons.svg#arrow-right"></use>
+              </svg>
+            </a>
+          </button>
+        </div>
+      </li>
+      <li class="surf-list__item">
+        <div class="surf-box">
+          <h3 class="surf__title">Vieux<br />Boucau</h3>
+          <p class="surf__text">Hossegor <span>|</span> France</p>
+
+          <picture class="surf__picture">
+            <source
+              srcset="
+                img/surf-slide--vieux-boucau.jpg,
+                img/surf-slide--vieux-boucau@x2.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              src="img/surf-slide--vieux-boucau@x2.jpg"
+              alt="Surfer conquers the wave"
+              width="390"
+              heigth="750"
+              class="surf__img"
+            />
+          </picture>
+        </div>
+        <div class="view-box">
+          <p class="view-more">View</p>
+          <button type="button" class="surf__btn">
+            <a href="" class="surf__link">
+              Surf
+              <svg class="btn-icon" width="24" height="24">
+                <use href="img/icons/icons.svg#arrow-right"></use>
+              </svg>
+            </a>
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
